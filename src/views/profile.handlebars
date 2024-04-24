@@ -1,0 +1,13 @@
+
+{{!-- Aca mostramos el Perfil de Usuario Ya logeado  --}}
+
+<h1>Perfil de usuario - Esta Vista solo se sirve si tiene ROLE ADMIN</h1>
+
+<h2>Usuario: {{user.username}}</h2>
+<h3>Role: {{user.role}}</h3>
+
+{{!-- Aca le agregamos un botton de Salida y hacemo la llamada del metodo /logout ya creado --}}
+<form action="/api/session/logout" method="get">
+    <button type="submit" class="btn btn-success">Salir</button>
+</form>
+
